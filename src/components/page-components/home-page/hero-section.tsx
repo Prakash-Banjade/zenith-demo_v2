@@ -1,0 +1,136 @@
+"use client"
+
+import Image from "next/image"
+import { ArrowRight, MessageCircleIcon, PlayIcon } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import SportCar from "@/public/assets/icons/Sports-black.svg";
+import LuxuryCar from "@/public/assets/icons/Luxury-white.svg";
+import SUV from "@/public/assets/icons/suv-black.svg";
+import Convertible from "@/public/assets/icons/convertible-black.svg";
+import Business from "@/public/assets/icons/business-black.svg";
+import { Separator } from "@/components/ui/separator";
+import HeroCar from '@/public/assets/banners/hero-car.png'
+import { motion } from 'framer-motion'
+
+export default function HeroSection() {
+    return (
+        <div className="min-h-[80vh] relative">
+            <div className="container mx-auto px-4 py-8 relative z-10">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div
+                    >
+                        <div className="flex space-x-6 mb-8">
+                            <button className="p-3 bg-gray-900 rounded-full">
+                                <Image src={LuxuryCar} alt="Luxury" width={50} height={50} />
+                            </button>
+                            <button className="p-3 bg-white rounded-full border border-border">
+                                <Image src={SportCar} alt="Sport" width={50} height={50} />
+                            </button>
+                            <button className="p-3 bg-white rounded-full border border-border">
+                                <Image src={SUV} alt="SUV" width={50} height={50} />
+                            </button>
+                            <button className="p-3 bg-white rounded-full border border-border">
+                                <Image src={Convertible} alt="Convertible" width={50} height={50} />
+                            </button>
+                            <button className="p-3 bg-white rounded-full border border-border">
+                                <Image src={Business} alt="Business" width={50} height={50} />
+                            </button>
+                        </div>
+
+                        <div className="mb-8">
+                            <div className="flex items-center space-x-2 text-sm text-gray-600 mb-2">
+                                <span>SEE+</span>
+                                <span>8 PERFORMANCE</span>
+                                <ArrowRight className="h-4 w-4" />
+                            </div>
+                            <div className="text-lg mb-2">AVENTADOR LP 780-4 ULTIMAE</div>
+                            <button className="border border-black rounded-full px-4 py-1 text-sm">+ Aventador</button>
+                        </div>
+
+                        <section className="p-8 rounded-xl w-fit bg-white/20 backdrop-blur-sm shadow-md">
+                            <div className="mb-8">
+                                <div className="text-sm text-gray-600 mb-1">Rent Aventador</div>
+                                <div className="text-5xl font-bold mb-4"><span className="text-gray-900 text-3xl font-semibold">AED</span> 6,999</div>
+                            </div>
+
+                            <div className="flex gap-2 justify-between">
+                                <Button variant={'outline'} size="icon" className="rounded-full size-12 bg-[#25D366] text-white hover:bg-[#61de8f] hover:text-white">
+                                    <MessageCircleIcon />
+                                </Button>
+                                <Button variant={'outline'} size="icon" className="rounded-full size-12">
+                                    <ArrowRight className="h-6 w-6" />
+                                </Button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div
+                    >
+                        <h1 className="2xl:text-8xl lg:text-6xl sm:text-5xl text-4xl font-extrabold mb-4 text-right text-gray-900">Drive the dream in one click</h1>
+                        <p className="text-xl mb-6 text-right"><span className="font-semibold text-secondary">Zenith</span> Super Car Rental</p>
+                        <p className="mb-2 text-right font-medium text-xl">The most trusted rental car company in Dubai</p>
+                        <p className="mb-6 text-right">
+                            2023 for comprehensive cover-up 22 % a year earlier
+                            <br />
+                            90@ 2022 abd the highest since the abi started
+                            collecting this data (2024)
+                        </p>
+                        <div className="flex space-x-4 justify-end">
+                            <button className="bg-black text-white px-6 py-3 rounded-full flex items-center">
+                                Explore Now <ArrowRight className="ml-2 h-5 w-5" />
+                            </button>
+                            <Button variant={'outline'} className="!px-6 !py-6 rounded-full text-base">
+                                Watch Video <PlayIcon size={18} className="ml-2" />
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="h-[300px]"></div>
+
+                <div className="grid md:grid-cols-3 gap-8 mt-16">
+                    <div className="flex mr-5">
+                        <section>
+                            <h2 className="text-6xl font-bold mb-4 text-gray-900">7+ Years</h2>
+                            <p className="text-muted-foreground">In the rental market, premium cars redefine luxury travel experiences</p>
+                        </section>
+                        <Separator orientation="vertical" className="ml-5" />
+                    </div>
+                    <div className="flex mr-5">
+                        <section>
+                            <h2 className="text-6xl font-bold mb-4 text-gray-900">111+ Cars</h2>
+                            <p className="text-muted-foreground">Premium cars redefine luxury travel with unmatched style and sophistication</p>
+                        </section>
+                        <Separator orientation="vertical" className="ml-5" />
+                    </div>
+                    <div>
+                        <h2 className="text-6xl font-bold mb-4 text-gray-900">846+ Clients</h2>
+                        <p className="text-muted-foreground">Our clients have trusted us with their luxury car needs</p>
+                    </div>
+                </div>
+            </div>
+            <section
+                className="absolute top-[55%] left-[40%] -translate-x-1/2 -translate-y-1/2 inset-0 w-full h-full grid place-items-center"
+            >
+                <motion.section
+                    initial={{ opacity: 0, x: "-100%" }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        delay: .5,
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 40,
+                    }}
+                >
+                    <Image
+                        src={HeroCar}
+                        alt="Hero Car"
+                        width={1600}
+                        height={1000}
+                        className="hero-car"
+                    />
+                </motion.section>
+            </section>
+        </div>
+    )
+}
