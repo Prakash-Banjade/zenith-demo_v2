@@ -87,6 +87,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .section-title {
+    @apply 2xl:text-5xl lg:text-6xl sm:text-5xl text-4xl font-extrabold mb-4 text-gray-900;
+  }
 }
 
 .hero-car {

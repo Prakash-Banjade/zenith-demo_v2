@@ -3,14 +3,16 @@
 import Image from "next/image"
 import { ArrowRight, MessageCircleIcon, PlayIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import SportCar from "@/public/assets/icons/Sports-black.svg";
-import LuxuryCar from "@/public/assets/icons/Luxury-white.svg";
-import SUV from "@/public/assets/icons/suv-black.svg";
-import Convertible from "@/public/assets/icons/convertible-black.svg";
-import Business from "@/public/assets/icons/business-black.svg";
+import SportCar from "@/../public/assets/icons/Sports-black.svg";
+import LuxuryCar from "@/../public/assets/icons/Luxury-white.svg";
+import SUV from "@/../public/assets/icons/suv-black.svg";
+import Convertible from "@/../public/assets/icons/convertible-black.svg";
+import Business from "@/../public/assets/icons/business-black.svg";
 import { Separator } from "@/components/ui/separator";
-import HeroCar from '@/public/assets/banners/hero-car.png'
+import HeroCar from '@/../public/assets/banners/hero-car.png'
 import { motion } from 'framer-motion'
+import { TooltipWrapper } from "@/components/ui/tooltip";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function HeroSection() {
     return (
@@ -54,12 +56,16 @@ export default function HeroSection() {
                             </div>
 
                             <div className="flex gap-2 justify-between">
-                                <Button variant={'outline'} size="icon" className="rounded-full size-12 bg-[#25D366] text-white hover:bg-[#61de8f] hover:text-white">
-                                    <MessageCircleIcon />
-                                </Button>
-                                <Button variant={'outline'} size="icon" className="rounded-full size-12">
-                                    <ArrowRight className="h-6 w-6" />
-                                </Button>
+                                <TooltipWrapper label="Whatsapp for booking">
+                                    <Button variant={'outline'} size="icon" className="rounded-full size-12 text-xl bg-[#25D366] text-white hover:bg-green-500 hover:text-white">
+                                        <BsWhatsapp />
+                                    </Button>
+                                </TooltipWrapper>
+                                <TooltipWrapper label="View Details">
+                                    <Button variant={'outline'} size="icon" className="rounded-full size-12">
+                                        <ArrowRight className="h-6 w-6" />
+                                    </Button>
+                                </TooltipWrapper>
                             </div>
                         </section>
                     </div>

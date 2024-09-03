@@ -1,12 +1,11 @@
 import React from 'react'
-import BlueLogo from "@/public/assets/logo/blue-logo.png";
-import WhiteLogo from "@/public/assets/logo/white-logo.png";
+import BlueLogo from "@/../public/assets/logo/blue-logo.png";
+import WhiteLogo from "@/../public/assets/logo/white-logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import DesktopNavLinks from './desktop-nav-links';
 import { TooltipWrapper } from '../ui/tooltip';
 import { SearchIcon } from 'lucide-react';
-import { ThemeToggleBtn } from '../ui/theme-toggle';
 import { Button } from '../ui/button';
 
 type Props = {}
@@ -29,12 +28,12 @@ export default function DesktopNav({ }: Props) {
 
                 <section className='flex gap-5 items-center'>
                     <TooltipWrapper label="Search">
-                        <Button className='!size-9' variant={"outline"} size={'icon'}>
+                        <Button className='!size-11 rounded-full' variant={"outline"} size={'icon'}>
                             <SearchIcon size={16} />
                         </Button>
                     </TooltipWrapper>
 
-                    <ThemeToggleBtn />
+                    {/* <ThemeToggleBtn /> */}
                 </section>
             </section>
         </nav>

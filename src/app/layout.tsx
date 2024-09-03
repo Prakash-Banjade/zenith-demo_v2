@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/context-providers/theme-provider";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ubuntu = Ubuntu({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
@@ -18,14 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ubuntu.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

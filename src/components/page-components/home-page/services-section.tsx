@@ -1,6 +1,6 @@
-import { Headphones, CreditCard, Handshake, CheckCircle, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
-import serviceBackground from '@/public/assets/banners/banner-3.jpg'
+import serviceBackground from '@/../public/assets/banners/banner-2.jpg'
 
 export default function Component() {
     return (

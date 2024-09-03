@@ -1,18 +1,18 @@
-import Audi from "@/public/assets/brands/audi.svg";
-import Bentley from "@/public/assets/brands/bentley.svg";
-import BMW from "@/public/assets/brands/bmw.svg";
-import Cadillac from "@/public/assets/brands/cadillac.svg";
-import Chevrolet from "@/public/assets/brands/chevrolet.svg";
-import Ferrari from "@/public/assets/brands/ferrari.svg";
-import LandRover from "@/public/assets/brands/land-rover.svg";
-import McLaren from "@/public/assets/brands/mclaren.svg";
-import Tesla from "@/public/assets/brands/tesla.svg";
-import RollsRoyce from "@/public/assets/brands/rolls-royce.svg";
-import Mercedes from "@/public/assets/brands/mercedes.svg";
-import Porsche from "@/public/assets/brands/porsche.svg";
-import Kia from "@/public/assets/brands/kia.svg";
-import GMC from "@/public/assets/brands/gmc.svg";
-import Lamborghini from "@/public/assets/brands/lamborghini.svg";
+import Audi from "@/../public/assets/brands/audi.svg";
+import Bentley from "@/../public/assets/brands/bentley.svg";
+import BMW from "@/../public/assets/brands/bmw.svg";
+import Cadillac from "@/../public/assets/brands/cadillac.svg";
+import Chevrolet from "@/../public/assets/brands/chevrolet.svg";
+import Ferrari from "@/../public/assets/brands/ferrari.svg";
+import LandRover from "@/../public/assets/brands/land-rover.svg";
+import McLaren from "@/../public/assets/brands/mclaren.svg";
+import Tesla from "@/../public/assets/brands/tesla.svg";
+import RollsRoyce from "@/../public/assets/brands/rolls-royce.svg";
+import Mercedes from "@/../public/assets/brands/mercedes.svg";
+import Porsche from "@/../public/assets/brands/porsche.svg";
+import Kia from "@/../public/assets/brands/kia.svg";
+import GMC from "@/../public/assets/brands/gmc.svg";
+import Lamborghini from "@/../public/assets/brands/lamborghini.svg";
 
 export type BrandList = {
     id: number;
