@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { ArrowRight, MessageCircleIcon, PlayIcon } from "lucide-react"
+import { ArrowRight, PlayIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SportCar from "@/../public/assets/icons/Sports-black.svg";
 import LuxuryCar from "@/../public/assets/icons/Luxury-white.svg";
@@ -18,9 +18,8 @@ export default function HeroSection() {
     return (
         <div className="min-h-[80vh] relative">
             <div className="container mx-auto px-4 py-8 relative z-10">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div
-                    >
+                <div className="lg:grid md:grid-cols-2 gap-8 items-center">
+                    <div className="lg:block hidden">
                         <div className="flex space-x-6 mb-8">
                             <button className="p-3 bg-gray-900 rounded-full">
                                 <Image src={LuxuryCar} alt="Luxury" width={50} height={50} />
@@ -116,23 +115,23 @@ export default function HeroSection() {
                 </div>
             </div>
             <section
-                className="absolute top-[55%] left-[40%] -translate-x-1/2 -translate-y-1/2 inset-0 w-full h-full grid place-items-center"
+                className="absolute lg:top-[55%] top-[40%] lg:left-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 inset-0 w-full h-full grid place-items-center"
             >
                 <motion.section
                     initial={{ opacity: 0, x: "-100%" }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{
-                        delay: .5,
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 40,
+                        delay: 0.5,
+                        duration: 1,
+                        ease: [0.25, 1, 0.5, 1],
                     }}
                 >
                     <Image
                         src={HeroCar}
                         alt="Hero Car"
-                        width={1600}
+                        width={1800}
                         height={1000}
+                        priority
                         className="hero-car"
                     />
                 </motion.section>

@@ -5,6 +5,7 @@ import BlueLogo from "@/../public/assets/logo/blue-logo.png";
 import WhiteLogo from "@/../public/assets/logo/white-logo.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter } from 'react-icons/fa'
 import { Button } from '@/components/ui/button';
+import { FooterSocialIcons } from './footer-social-icons';
 
 export default function Footer() {
     return (
@@ -38,7 +39,8 @@ export default function Footer() {
                             className="max-h-12 w-auto"
                         />
                         <p className="my-4 text-sm text-muted-foreground text-center">Zenith is one of Known Car Rental Company in dubai. We are Dealing with Luxury Cars, Sports Cars, SUV Cars and Economy Cars for Rent in Dubai. We are also provide chauffeur service.</p>
-                        <div className="flex space-x-4">
+                        <FooterSocialIcons />
+                        {/* <div className="flex space-x-4">
                             <Button asChild={true} variant={"outline"} size={'icon'} className='rounded-full size-12'>
                                 <Link href="#" className=""><FaFacebook size={24} /></Link>
                             </Button>
@@ -54,7 +56,7 @@ export default function Footer() {
                             <Button asChild={true} variant={"outline"} size={'icon'} className='rounded-full size-12'>
                                 <Link href="#" className=""><FaPinterest size={24} /></Link>
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">For Dealers</h3>
@@ -83,10 +85,9 @@ export default function Footer() {
                 <div className="mt-8 pt-8 flex flex-col md:flex-row justify-between items-center border-t border-border">
                     <p className="mb-4 md:mb-0">&copy; copyright Zenith Super Car Rental, All Rights Reserved</p>
                     <div className="flex space-x-4">
-                        <Image src="/placeholder.svg" alt="Apple Pay" width={40} height={25} />
-                        <Image src="/placeholder.svg" alt="Discover" width={40} height={25} />
-                        <Image src="/placeholder.svg" alt="Mastercard" width={40} height={25} />
-                        <Image src="/placeholder.svg" alt="Google Pay" width={40} height={25} />
+                        <a href="#" className='hover:underline hover:text-primary'>Privacy Policy</a>
+                        <span className='mx-2'>•</span>
+                        <a href="#" className='hover:underline hover:text-primary'>Terms of Services</a>
                     </div>
                 </div>
             </div>

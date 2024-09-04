@@ -25,6 +25,11 @@ export const useRoutes = () => {
             active: pathname === "/services",
         },
         {
+            label: "Adventures",
+            link: '/',
+            active: pathname === "/adventures",
+        },
+        {
             label: "Contact",
             link: '/',
             active: pathname === "/contact",
