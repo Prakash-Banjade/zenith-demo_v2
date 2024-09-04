@@ -45,9 +45,11 @@ export const CarsListSection = ({ carsList, title, subTitle }: { carsList: CarLi
                     })}
                 </div>
             </div>
-            {subTitle && <p className="container text-center text-muted-foreground text-sm mt-5">
-                {subTitle}
-            </p>}
+            <section className="mt-10 flex justify-center">
+                <Button className="rounded-sm" size={'lg'}>
+                    Load More
+                </Button>
+            </section>
         </section>
     );
 };

@@ -37,25 +37,34 @@ export const locations = [
 
 export const RentalLocationsSection = () => {
     return (
-        <section className="container grid">
-            <section className="bg-white lg:py-32 md:py-24 py-16">
-                <div className="container mx-auto space-y-10">
-                    <div className="lg:max-w-[50%] mx-auto  md:mb-10 mb-6">
-                        <h3 className="section-title">
-                            <span className="text-primary">Rental</span> Locations
-                        </h3>
-                        <p className="text-center  text-muted-foreground text-sm">
-                            We offer a wide range of rental locations across Dubai. From luxury
-                            villas to budget-friendly homes, our selection caters to every
-                            preference.
-                        </p>
-                    </div>
-                    <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
-                        {locations.map((item, index) => (
-                            <Item key={index} {...item} />
-                        ))}
-                    </div>
+        <section className="container grid md:grid-cols-2 gap-10">
+            <section className="">
+                <div className="md:mb-10 mb-6">
+                    <h3 className="section-title">
+                        <span className="text-primary">Rental</span> Locations
+                    </h3>
+                    <p className="text-muted-foreground text-sm">
+                        We offer a wide range of rental locations across Dubai. From luxury
+                        villas to budget-friendly homes, our selection caters to every
+                        preference.
+                    </p>
                 </div>
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+                    {locations.map((item, index) => (
+                        <Item key={index} {...item} />
+                    ))}
+                </div>
+            </section>
+
+            <section className="md:grid hidden place-items-center">
+                <Image
+                    src={'/assets/images/map.webp'}
+                    alt="Map"
+                    height={600}
+                    width={1000}
+                    priority={false}
+                    className="object-contain zen__transition__300"
+                />
             </section>
         </section>
     );

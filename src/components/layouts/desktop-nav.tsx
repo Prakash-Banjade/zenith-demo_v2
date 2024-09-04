@@ -24,7 +24,7 @@ export default function DesktopNav({ }: Props) {
                     />
                 </Link>
 
-                <DesktopNavLinks />
+                {/* <DesktopNavLinks /> */}
 
                 <section className='flex gap-5 items-center'>
                     <TooltipWrapper label="Search">
