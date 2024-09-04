@@ -11,7 +11,7 @@ export default function DesktopNavLinks({ }: Props) {
     const routes = useRoutes()
 
     return (
-        <ul className='flex gap-12 items-center'>
+        <ul className='lg:flex hidden lg:gap-12 gap-8 items-center'>
             {
                 routes.map((route, index) => (
                     <li

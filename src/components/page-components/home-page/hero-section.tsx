@@ -98,14 +98,14 @@ export default function HeroSection() {
                             <h2 className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-bold mb-4 text-gray-900">7+ Years</h2>
                             <p className="text-muted-foreground">In the rental market, premium cars redefine luxury travel experiences</p>
                         </section>
-                        <Separator orientation="vertical" className="ml-5" />
+                        <Separator orientation="vertical" className="ml-5 sm:block hidden" />
                     </div>
                     <div className="flex sm:mr-5">
                         <section>
                             <h2 className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-bold mb-4 text-gray-900">111+ Cars</h2>
                             <p className="text-muted-foreground">Premium cars redefine luxury travel with unmatched style and sophistication</p>
                         </section>
-                        <Separator orientation="vertical" className="ml-5" />
+                        <Separator orientation="vertical" className="ml-5 sm:block hidden" />
                     </div>
                     <div>
                         <h2 className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-bold mb-4 text-gray-900">846+ Clients</h2>
