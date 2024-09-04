@@ -16,7 +16,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 export default function HeroSection() {
     return (
-        <div className="min-h-[80vh] relative">
+        <div className="sm:min-h-[80vh] relative">
             <div className="container mx-auto px-4 py-8 relative z-10">
                 <div className="lg:grid md:grid-cols-2 gap-8 items-center">
                     <div className="lg:block hidden">
@@ -69,8 +69,7 @@ export default function HeroSection() {
                         </section>
                     </div>
 
-                    <div
-                    >
+                    <div>
                         <h1 className="2xl:text-8xl lg:text-6xl sm:text-5xl text-4xl font-extrabold mb-4 text-right text-gray-900">Drive the dream in one click</h1>
                         <p className="text-xl mb-6 text-right"><span className="font-semibold text-secondary">Zenith</span> Super Car Rental</p>
                         <p className="mb-2 text-right font-medium text-xl">The most trusted rental car company in Dubai</p>
@@ -91,31 +90,31 @@ export default function HeroSection() {
                     </div>
                 </div>
 
-                <div className="h-[300px]"></div>
+                <div className="sm:h-[300px] h-[200px]"></div>
 
-                <div className="grid md:grid-cols-3 gap-8 mt-16">
-                    <div className="flex mr-5">
+                <div className="grid sm:grid-cols-3 gap-8 mt-16">
+                    <div className="flex sm:mr-5">
                         <section>
-                            <h2 className="text-6xl font-bold mb-4 text-gray-900">7+ Years</h2>
+                            <h2 className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-bold mb-4 text-gray-900">7+ Years</h2>
                             <p className="text-muted-foreground">In the rental market, premium cars redefine luxury travel experiences</p>
                         </section>
                         <Separator orientation="vertical" className="ml-5" />
                     </div>
-                    <div className="flex mr-5">
+                    <div className="flex sm:mr-5">
                         <section>
-                            <h2 className="text-6xl font-bold mb-4 text-gray-900">111+ Cars</h2>
+                            <h2 className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-bold mb-4 text-gray-900">111+ Cars</h2>
                             <p className="text-muted-foreground">Premium cars redefine luxury travel with unmatched style and sophistication</p>
                         </section>
                         <Separator orientation="vertical" className="ml-5" />
                     </div>
                     <div>
-                        <h2 className="text-6xl font-bold mb-4 text-gray-900">846+ Clients</h2>
+                        <h2 className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-bold mb-4 text-gray-900">846+ Clients</h2>
                         <p className="text-muted-foreground">Our clients have trusted us with their luxury car needs</p>
                     </div>
                 </div>
             </div>
             <section
-                className="absolute lg:top-[55%] top-[40%] lg:left-[40%] left-[50%] -translate-x-1/2 -translate-y-1/2 inset-0 w-full h-full grid place-items-center"
+                className="absolute lg:top-[55%] top-[40%] lg:left-[40%] left-[50%] -translate-x-1/2 -translate-y-[40%] sm:-translate-y-1/2 inset-0 w-full h-full grid place-items-center"
             >
                 <motion.section
                     initial={{ opacity: 0, x: "-100%" }}

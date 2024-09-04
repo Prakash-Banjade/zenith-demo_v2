@@ -35,21 +35,21 @@ export default function PopularCarsSection({ }: Props) {
 
         responsive: [
             {
-                breakpoint: 1240,
+                breakpoint: 1540,
                 settings: {
                     arrows: false,
                     slidesToShow: 3,
                 },
             },
             {
-                breakpoint: 768,
+                breakpoint: 1268,
                 settings: {
                     arrows: false,
                     slidesToShow: 2,
                 },
             },
             {
-                breakpoint: 480,
+                breakpoint: 640,
                 settings: {
                     arrows: false,
                     slidesToShow: 1,
@@ -58,20 +58,19 @@ export default function PopularCarsSection({ }: Props) {
         ],
     };
 
-
     return (
         <section className='bg-[#f7f7f7] py-12'>
-            <section className='container grid grid-cols-4 gap-5 mx-auto'>
+            <section className='container lg:grid grid-cols-4 gap-5 mx-auto'>
 
                 <section>
-                    <h3 className='section-title'>Explore our <br /> Popular Cars</h3>
+                    <h3 className='section-title'>Explore our <br className='md:block hidden' /> Popular Cars</h3>
                     <p className='text-muted-foreground'>We offer a wide range of cars to choose from, catering to your specific needs and preferences.</p>
 
-                    <Button variant={'outline'} className='mt-12 rounded-full' size={'lg'}>
+                    <Button variant={'outline'} className='sm:mt-12 mt-5 rounded-full' size={'lg'}>
                         Explore all
                     </Button>
 
-                    <section className='space-x-5 mt-20'>
+                    <section className='md:block hidden space-x-5 lg:mt-20 mt-5'>
                         <Button type="button" variant={'outline'} className='rounded-full size-12' size={'icon'} onClick={() => sliderRef.current?.slickPrev()}>
                             <ArrowLeftIcon size={16} />
                         </Button>
@@ -81,7 +80,7 @@ export default function PopularCarsSection({ }: Props) {
                     </section>
                 </section>
 
-                <section className='col-span-3 w-full'>
+                <section className='col-span-3 w-full md:mt-0 mt-10'>
                     <div className=''>
                         <Slider {...car_list_settings} ref={sliderRef}>
                             {allCarsList.map((item, index) => {
@@ -130,7 +129,7 @@ const Item = ({
     image,
 }: TItem) => {
     return (
-        <div className="hover:bg-white mx-2 basis-1/3 bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 transition-all shadow-sm border border-border rounded-md p-4 space-y-6">
+        <div className="bg-white mx-2 basis-1/3 delay-75 hover:shadow-lg group border-slate-100 transition-all shadow-sm border border-border rounded-md p-4 space-y-6">
             <h2 className='text-2xl font-bold text-gray-900 mb-2'>{title}</h2>
             <div className="h-[120px] !w-full relative">
                 <Image src={image} alt={title} fill className="scale-110 object-contain" />

@@ -7,6 +7,7 @@ import DesktopNavLinks from './desktop-nav-links';
 import { TooltipWrapper } from '../ui/tooltip';
 import { SearchIcon } from 'lucide-react';
 import { Button } from '../ui/button';
+import { Sidebar } from './sidebar/sidebar';
 
 type Props = {}
 
@@ -34,6 +35,7 @@ export default function DesktopNav({ }: Props) {
                     </TooltipWrapper>
 
                     {/* <ThemeToggleBtn /> */}
+                    <Sidebar />
                 </section>
             </section>
         </nav>

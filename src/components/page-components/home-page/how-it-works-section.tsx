@@ -51,7 +51,7 @@ export default function HowItWorksSection({ }: Props) {
                         <section className='bg-white'>
                             <h3 className="text-xl font-semibold mb-2">Set Your Date</h3>
                             <p className="text-sm text-gray-500">
-                                Pick your ideal dates for an unforgettable journey with Zenith Super Car's flexible scheduling
+                                Pick your ideal dates for an unforgettable journey with Zenith Super Car&apos;s flexible scheduling
                             </p>
                         </section>
                     </div>
