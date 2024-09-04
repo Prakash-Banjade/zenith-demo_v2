@@ -8,7 +8,7 @@ export function AdventureSection() {
     return (
         <section className="container">
             <header className="mb-10">
-                <h2 className="section-title mb-5 text-center"><span className="text-primary">Barry's Adventures</span> Activities In Dubai</h2>
+                <h2 className="section-title mb-5 text-center"><span className="text-primary">Barry&apos;s Adventures</span> Activities In Dubai</h2>
                 <p className="text-center text-base text-muted-foreground">Embrace the Excitement with Thrilling Desert Safaris, High-Speed Jet Skiing, Luxurious Yacht Cruises, and Off-Road Buggy Expeditions in a City of Wonders.</p>
             </header>
 

@@ -24,7 +24,7 @@ export default function WhyChooseUsSection() {
                         <div className="bg-gray-100 p-6 rounded-lg">
                             <h3 className="text-xl font-semibold mb-2">No Delays</h3>
                             <p className="text-gray-600">
-                                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
                                 standard dummy text ever since the 1500s.
                             </p>
                         </div>
@@ -32,13 +32,13 @@ export default function WhyChooseUsSection() {
                             <h3 className="text-xl font-semibold mb-2">Hight Quality</h3>
                             <p className="text-gray-600">
                                 Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s.
+                                industry&apos;s standard dummy text ever since the 1500s.
                             </p>
                         </div>
                         <div className="bg-gray-100 p-6 rounded-lg">
                             <h3 className="text-xl font-semibold mb-2">Premium Support</h3>
                             <p className="text-gray-600">
-                                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
                                 standard dummy text ever since the 1500s.
                             </p>
                         </div>
@@ -46,7 +46,7 @@ export default function WhyChooseUsSection() {
                             <h3 className="text-xl font-semibold mb-2">A Diverse Selection</h3>
                             <p className="text-gray-600">
                                 Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's standard dummy text ever since the 1500s.
+                                industry&apos;s standard dummy text ever since the 1500s.
                             </p>
                         </div>
                     </div>

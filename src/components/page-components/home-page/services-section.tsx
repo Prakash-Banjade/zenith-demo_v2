@@ -18,10 +18,10 @@ export default function Component() {
                     <h2 className="text-5xl font-bold mb-2">Our Services</h2>
                     <p className="text-secondary mb-6">Looking to Save More on Your rental car?</p>
                     <p className="mb-8 text-gray-300">
-                        Discover unparalleled luxury and convenience with EuroElite Cars' premium car rental services.
-                        From sleek sedans to spacious SUVs, our meticulously curated fleet ensures you'll travel in style
+                        Discover unparalleled luxury and convenience with EuroElite Cars&apos; premium car rental services.
+                        From sleek sedans to spacious SUVs, our meticulously curated fleet ensures you&apos;ll travel in style
                         and comfort. With flexible rental options, seamless booking, and exceptional customer service,
-                        we're your trusted partner for unforgettable journeys.
+                        we&apos;re your trusted partner for unforgettable journeys.
                     </p>
                     <div className="space-y-6">
                         <ServiceItem
