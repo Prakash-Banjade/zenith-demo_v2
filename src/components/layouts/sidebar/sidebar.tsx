@@ -62,7 +62,7 @@ export const Sidebar = () => {
     }, []);
 
     return (
-        <div className={`relative ${scrolled ? 'opacity-100 pointer-events-auto' : 'sm:opacity-0 sm:pointer-events-none opacity-100 pointer-events-auto'}  transition-all`}>
+        <div className={`relative ${scrolled ? 'opacity-100 pointer-events-auto' : 'lg:opacity-0 lg:pointer-events-none opacity-100 pointer-events-auto'}  transition-all`}>
             <motion.aside
                 initial={false}
                 animate={isOpen ? "open" : "closed"}

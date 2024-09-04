@@ -29,7 +29,7 @@ export default function DesktopNav({ }: Props) {
 
                 <section className='flex gap-5 items-center'>
                     <TooltipWrapper label="Search">
-                        <Button className='!size-11 rounded-full' variant={"outline"} size={'icon'}>
+                        <Button className='!size-11 rounded-full mr-16 lg:mr-0' variant={"outline"} size={'icon'}>
                             <SearchIcon size={16} />
                         </Button>
                     </TooltipWrapper>
