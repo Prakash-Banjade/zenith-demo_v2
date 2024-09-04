@@ -24,7 +24,7 @@ export default function DesktopNavLinks({ }: Props) {
                                 route.active && "text-secondary"
                             )}
                         >
-                            <span className={`absolute -bottom-2 left-0 w-0 h-[2px] bg-muted-foreground ${route.active ? "w-full !bg-secondary" : "group-hover:w-full"} transition-all duration-300`}></span>
+                            <span className={`absolute -bottom-2 left-0 w-0 h-[2px] bg-secondary ${route.active ? "w-full !bg-secondary" : "group-hover:w-full"} transition-all duration-300`}></span>
                             {route.label}
                         </Link>
                     </li>

@@ -11,17 +11,17 @@ export const useRoutes = () => {
         },
         {
             label: "About",
-            link: '/',
+            link: '/about',
             active: pathname === "/about",
         },
         {
             label: "Models",
-            link: '/',
+            link: '/models',
             active: pathname === "/models",
         },
         {
             label: "Services",
-            link: '/',
+            link: '/services',
             active: pathname === "/services",
         },
         {

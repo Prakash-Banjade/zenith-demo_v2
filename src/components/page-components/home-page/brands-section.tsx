@@ -12,8 +12,8 @@ export default function BrandsSection({ }: Props) {
         <section>
             <Marquee pauseOnHover gradient>
                 {
-                    brandsList.map(brand => (
-                        <div className="bg-white mx-10">
+                    brandsList.map((brand, i) => (
+                        <div className="bg-white mx-10" key={i}>
                             <div className="!min-h-[50px] flex items-center justify-center">
                                 <Image
                                     src={brand.image}
