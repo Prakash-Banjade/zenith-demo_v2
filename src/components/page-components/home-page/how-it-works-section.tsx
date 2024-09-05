@@ -9,7 +9,7 @@ export default function HowItWorksSection({ }: Props) {
         <section className='container mx-auto'>
             <header className='bg-white relative z-10 w-fit mx-auto'>
                 <h2 className='section-title text-center'>How It <span className='text-primary'>Works</span></h2>
-                <p className='text-center'>No efforts, no hassles, rent your dream car with Zenith Super Car Rental</p>
+                <p className='text-center text-muted-foreground'>No efforts, no hassles, rent your dream car with Zenith Super Car Rental</p>
             </header>
 
             <section>
@@ -38,8 +38,8 @@ export default function HowItWorksSection({ }: Props) {
                             <MapPin className="w-8 h-8" />
                         </div>
                         <section className='bg-white'>
-                            <h3 className="text-xl font-semibold mb-2">Select Your Location</h3>
-                            <p className="text-sm text-gray-500">
+                            <h3 className="sm:text-xl text-lg text-gray-800 font-semibold mb-2">Select Your Location</h3>
+                            <p className="text-sm text-muted-foreground">
                                 Choose from our premium locations for the ultimate super car rental experience with Zenith
                             </p>
                         </section>
@@ -49,8 +49,8 @@ export default function HowItWorksSection({ }: Props) {
                             <Calendar className="w-8 h-8" />
                         </div>
                         <section className='bg-white'>
-                            <h3 className="text-xl font-semibold mb-2">Set Your Date</h3>
-                            <p className="text-sm text-gray-500">
+                            <h3 className="sm:text-xl text-lg text-gray-800 font-semibold mb-2">Set Your Date</h3>
+                            <p className="text-sm text-muted-foreground">
                                 Pick your ideal dates for an unforgettable journey with Zenith Super Car&apos;s flexible scheduling
                             </p>
                         </section>
@@ -60,8 +60,8 @@ export default function HowItWorksSection({ }: Props) {
                             <Car className="w-8 h-8" />
                         </div>
                         <section className='bg-white'>
-                            <h3 className="text-xl font-semibold mb-2">Reserve Your Supercar</h3>
-                            <p className="text-sm text-gray-500">
+                            <h3 className="sm:text-xl text-lg text-gray-800 font-semibold mb-2">Reserve Your Supercar</h3>
+                            <p className="text-sm text-muted-foreground">
                                 Secure your dream supercar with our seamless online booking system. Your adventure begins here
                             </p>
                         </section>

@@ -22,29 +22,29 @@ export default function WhyChooseUsSection() {
                     </div>
                     <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-gray-100 p-6 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">No Delays</h3>
-                            <p className="text-gray-600">
+                            <h3 className="md:text-xl sm:text-lg text-base font-semibold mb-2">No Delays</h3>
+                            <p className="text-gray-600 sm:text-base text-sm">
                                 Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
                                 standard dummy text ever since the 1500s.
                             </p>
                         </div>
                         <div className="bg-gray-100 p-6 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">Hight Quality</h3>
-                            <p className="text-gray-600">
+                            <h3 className="md:text-xl sm:text-lg text-base font-semibold mb-2">Hight Quality</h3>
+                            <p className="text-gray-600 sm:text-base text-sm">
                                 Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                                 industry&apos;s standard dummy text ever since the 1500s.
                             </p>
                         </div>
                         <div className="bg-gray-100 p-6 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">Premium Support</h3>
-                            <p className="text-gray-600">
+                            <h3 className="md:text-xl sm:text-lg text-base font-semibold mb-2">Premium Support</h3>
+                            <p className="text-gray-600 sm:text-base text-sm">
                                 Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s
                                 standard dummy text ever since the 1500s.
                             </p>
                         </div>
                         <div className="bg-gray-100 p-6 rounded-lg">
-                            <h3 className="text-xl font-semibold mb-2">A Diverse Selection</h3>
-                            <p className="text-gray-600">
+                            <h3 className="md:text-xl sm:text-lg text-base font-semibold mb-2">A Diverse Selection</h3>
+                            <p className="text-gray-600 sm:text-base text-sm">
                                 Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                                 industry&apos;s standard dummy text ever since the 1500s.
                             </p>
@@ -67,18 +67,18 @@ export default function WhyChooseUsSection() {
                             />
                         </div>
 
-                        <div className="flex flex-wrap w-full text-white gap-4 text-sm xl:mt-80">
+                        <div className="flex flex-wrap w-full text-white md:gap-4 sm:gap-2 gap-1 text-sm xl:mt-80">
                             <div className="border border-gray-500 rounded-xl md:p-6 p-4 shadow-lg grow flex gap-3 md:gap-8 items-end">
-                                <p className="text-5xl font-bold">+100</p>
+                                <p className="md:text-5xl sm:text-4xl text-3xl font-bold">+100</p>
                                 <p>Cars <br /> in stock</p>
                             </div>
                             <div className="border border-gray-500 rounded-xl md:p-6 p-4 shadow-lg grow flex gap-3 md:gap-8 items-end">
-                                <p className="text-5xl font-bold">+13K</p>
+                                <p className="md:text-5xl sm:text-4xl text-3xl font-bold">+13K</p>
                                 <p>Satisfied <br /> Customers</p>
                             </div>
-                            <div className="border border-gray-500 rounded-xl md:p-6 p-4 shadow-lg grow flex gap-3 md:gap-8 items-end">
-                                <p className="text-5xl font-bold">+11</p>
-                                <p>Years <br /> Experience</p>
+                            <div className="border border-gray-500 rounded-xl md:p-6 p-4 shadow-lg grow flex gap-3 md:gap-8 sm:items-end items-center">
+                                <p className="md:text-5xl sm:text-4xl text-3xl font-bold">+11</p>
+                                <p>Years <br className="sm:block hidden" /> Experience</p>
                             </div>
                         </div>
                     </section>
@@ -89,7 +89,7 @@ export default function WhyChooseUsSection() {
                             <p className="text-slate-300">Best price in the city with full insurance included, <br /> full refund in case of cancellation</p>
                         </header>
 
-                        <section className="flex flex-wrap xl:justify-between mt-8 gap-16">
+                        <section className="flex flex-wrap xl:justify-between mt-8 sm:gap-16 gap-2 sm:flex-row flex-col">
                             <ul className="text-slate-300 space-y-2">
                                 <li>✔ &nbsp;24/7 Support</li>
                                 <li>✔ &nbsp;No Hidden Charges</li>
@@ -102,7 +102,7 @@ export default function WhyChooseUsSection() {
                             </ul>
                         </section>
 
-                        <Button title="Click to call us now" variant={'outline'} className="px-10 py-6 rounded-full text-base items-center mt-auto xl:w-full w-fit mt-10">
+                        <Button title="Click to call us now" variant={'outline'} className="px-10 py-6 rounded-full text-base items-center xl:w-full w-fit mt-10">
                             <PhoneIcon size={20} className="mr-2" />
                             Call us now
                         </Button>

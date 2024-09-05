@@ -11,13 +11,11 @@ import { TbManualGearboxFilled } from "react-icons/tb";
 
 export const CarsListSection = ({ carsList, title, subTitle }: { carsList: CarList[], title?: React.ReactNode, subTitle?: React.ReactNode }) => {
     return (
-        <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100  lg:py-20 md:py-16 py-10">
+        <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100 lg:py-20 md:py-16 py-10">
             <div className="container mx-auto space-y-10">
-                <header className="md:mb-10 mb-6 flex justify-between items-center gap-5 flex-wrap">
-                    <h3 className="lg:text-4xl md:text-3xl text-2xl text-left md:font-bold font-semibold md:mb-6 mb-4">
-                        {title || <>
-                            <span className="text-primary">Cars</span> Collection
-                        </>}
+                <header className="md:mb-10 mb-6 flex justify-between items-center sm:gap-5 gap-2 flex-wrap">
+                    <h3 className="section-title mb-0">
+                        <span className="text-primary">Premium Cars</span> <br className="sm:hidden block" /> for Rent
                     </h3>
                     <button className="group hover:bg-primary/5 rounded-md text-base text-primary font-medium flex items-center gap-2 transition-all px-3 py-2">
                         See all
@@ -129,7 +127,7 @@ const Item = ({
             </section>
 
             <div className="flex gap-2 justify-between items-center">
-                <p className='text-lg'>
+                <p className='text-lg font-semibold text-secondary'>
                     AED {price.toLocaleString()}/day
                 </p>
 

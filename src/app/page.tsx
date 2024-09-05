@@ -29,7 +29,6 @@ export default function HomePage() {
       <div className="md:h-36 h-20"></div>
       <CarsListSection
         carsList={[...allCarsList, ...sportCars, ...luxuryCars, ...suvCarList]}
-        title={<><span className="text-primary">Premium Cars</span> for Rent</>}
       />
       <div className="md:h-36 h-20"></div>
       <ServicesSection />

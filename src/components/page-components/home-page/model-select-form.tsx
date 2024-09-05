@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { DatePickerWithRange } from '@/components/ui/date-range-picker'
-import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select'
 import React from 'react'
 
@@ -12,19 +11,19 @@ export default function ModelSelectForm({ }: Props) {
         <Card className="w-full max-w-4xl mx-auto">
             <CardContent className="p-6">
                 <form className="flex flex-wrap gap-6">
-                    <div className="space-y-2">
-                        <label htmlFor="date" className="text-base font-medium text-gray-700 uppercase">
+                    <div className="space-y-2 grow">
+                        <label htmlFor="date" className="sm:text-base text-sm font-medium text-gray-700 uppercase">
                             <span className='text-muted-foreground'>01</span> WHEN
                         </label>
                         <DatePickerWithRange />
                     </div>
                     <div className="space-y-2 grow">
-                        <label htmlFor="make" className="text-base font-medium text-gray-700 uppercase">
+                        <label htmlFor="make" className="sm:text-base text-sm font-medium text-gray-700 uppercase">
                             <span className='text-muted-foreground'>02</span> SELECT MAKE
                         </label>
                         <Select>
-                            <SelectTrigger className="text-base">
-                                <SelectValue placeholder="Select a Car type" className='text-base' />
+                            <SelectTrigger className="sm:text-base text-sm">
+                                <SelectValue placeholder="Select a Car type" className='sm:text-base text-sm' />
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectGroup>
@@ -43,12 +42,12 @@ export default function ModelSelectForm({ }: Props) {
                         </Select>
                     </div>
                     <div className="space-y-2 grow">
-                        <label htmlFor="model" className="text-base font-medium text-gray-700 uppercase">
+                        <label htmlFor="model" className="sm:text-base text-sm font-medium text-gray-700 uppercase">
                             <span className='text-muted-foreground'>03</span> SELECT A MODEL
                         </label>
                         <Select>
-                            <SelectTrigger className="text-base">
-                                <SelectValue placeholder="Select Model" className='text-base' />
+                            <SelectTrigger className="sm:text-base text-sm">
+                                <SelectValue placeholder="Select Model" className='sm:text-base text-sm' />
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectGroup>
@@ -68,7 +67,7 @@ export default function ModelSelectForm({ }: Props) {
                         </Select>
                     </div>
                     <div className="flex items-end">
-                        <Button size={"lg"}>
+                        <Button className='sm:h-10 sm:rounded-md sm:px-8'>
                             SEARCH
                         </Button>
                     </div>
