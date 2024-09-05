@@ -80,7 +80,7 @@ type TItem = {
 const Item = ({ title, image }: TItem) => {
     return (
         <div className="p-2 relative">
-            <div className="relative group overflow-hidden">
+            <div className="relative group overflow-hidden rounded-t-lg">
                 <Image
                     src={image}
                     alt="Single Car"
@@ -89,16 +89,13 @@ const Item = ({ title, image }: TItem) => {
                     priority={false}
                     className="w-full h-[250px] object-cover rounded-t border group-hover:rotate-1 zen__transition__300 overflow-hidden group-hover:scale-105"
                 />
-                <Link
-                    href={"/"}
+                <div
                     className="absolute inset-0 w-full h-full bg-black/40 group-hover:bg-blue-500/20 zen__transition__300"
-                ></Link>
+                ></div>
             </div>
 
-            <div className="flex flex-col gap-2 p-6 border border-gray-200 rounded-lg rounded-t-none">
-                <div className="flex justify-between items-center">
-                    <h3 className="text-lg font-semibold text-primary text-center">{title}</h3>
-                </div>
+            <div className="flex flex-col gap-2 p-2 border border-gray-200 rounded-lg rounded-t-none">
+                <h3 className="text-lg font-semibold text-primary text-center">{title}</h3>
             </div>
         </div>
     );

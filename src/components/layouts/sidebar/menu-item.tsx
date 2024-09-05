@@ -36,7 +36,7 @@ export const MenuItem = ({ route, toggleOpen }: {
             variants={menuItemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className='group relative w-fit mb-10'
+            className='group relative w-fit sm:mb-10 mb-6'
         >
             <Link
                 href={route.link}

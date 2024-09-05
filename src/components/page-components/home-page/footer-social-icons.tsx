@@ -64,7 +64,7 @@ export function FooterSocialIcons() {
         },
     ];
     return (
-        <div className="flex items-center justify-center w-full">
+        <div className="sm:flex hidden items-center justify-center w-full">
             <FloatingDock
                 items={links}
             />

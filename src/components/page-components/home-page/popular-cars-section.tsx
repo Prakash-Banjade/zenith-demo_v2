@@ -63,7 +63,7 @@ export default function PopularCarsSection({ }: Props) {
             <section className='container lg:grid grid-cols-4 gap-5 mx-auto'>
 
                 <section>
-                    <h3 className='section-title'>Explore our <br className='md:block hidden' /> Popular Cars</h3>
+                    <h3 className='section-title'>Explore our <br className='md:block hidden' /> <span className='text-primary'>Popular Cars</span></h3>
                     <p className='text-muted-foreground'>We offer a wide range of cars to choose from, catering to your specific needs and preferences.</p>
 
                     <Button variant={'outline'} className='sm:mt-12 mt-5 rounded-full' size={'lg'}>

@@ -40,8 +40,8 @@ export default function FAQSection() {
 
             <section className="container text-white sm:py-16 py-12 relative z-20">
                 <div className="text-center pt-0 pb-8">
-                    <h2 className="text-4xl font-bold mb-2">Frequently Asked Questions</h2>
-                    <p className="text-lg">Looking to Save More on Your rental car?</p>
+                    <h2 className="section-title text-white mb-2">Frequently Asked Questions</h2>
+                    <p className="text-gray-200">Looking to Save More on Your rental car?</p>
                 </div>
                 <div className="space-y-6">
                     <div className="flex justify-center gap-2 mb-6 flex-wrap">

@@ -12,7 +12,7 @@ export default function ModelSelectForm({ }: Props) {
         <Card className="w-full max-w-4xl mx-auto">
             <CardContent className="p-6">
                 <form className="flex flex-wrap gap-6">
-                    <div className="space-y-2">
+                    <div className="space-y-2 grow">
                         <label htmlFor="date" className="text-base font-medium text-gray-700 uppercase">
                             <span className='text-muted-foreground'>01</span> WHEN
                         </label>

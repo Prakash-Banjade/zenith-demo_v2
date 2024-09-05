@@ -9,8 +9,8 @@ import { FooterSocialIcons } from './footer-social-icons';
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-100 text-gray-800 py-8 sm:pt-20 px-4 md:px-8">
-            <div className="container mx-auto">
+        <footer className="bg-slate-100 text-gray-800 py-8 sm:pt-20">
+            <div className="container">
                 <div className="xl:flex hidden gap-8 justify-between">
                     <section className='flex gap-8 justify-between'>
                         <div>
@@ -27,7 +27,7 @@ export default function Footer() {
                         <div>
                             <h3 className="font-bold mb-4">Explore Our Brand</h3>
                             <ul className="space-y-2 text-muted-foreground">
-                                <li><Link href="#" className="hover:underline">New Haier.com</Link></li>
+                                <li><Link href="#" className="hover:underline">New Zenith.com</Link></li>
                                 <li><Link href="#" className="hover:underline">Dealer Rater</Link></li>
                             </ul>
                         </div>
@@ -67,7 +67,7 @@ export default function Footer() {
                             <h3 className="font-bold mb-4">For Dealers</h3>
                             <ul className="space-y-2 text-muted-foreground">
                                 <li><Link href="#" className="hover:underline">Dealer Login</Link></li>
-                                <li><Link href="#" className="hover:underline">Grow With Haier</Link></li>
+                                <li><Link href="#" className="hover:underline">Grow With Zenith</Link></li>
                                 <li><Link href="#" className="hover:underline">Fuel</Link></li>
                                 <li><Link href="#" className="hover:underline">Dealer Inspire</Link></li>
                                 <li><Link href="#" className="hover:underline">Dealer rater</Link></li>
@@ -77,8 +77,8 @@ export default function Footer() {
                         <div>
                             <h3 className="font-bold mb-4">Our Company</h3>
                             <ul className="space-y-2 text-muted-foreground">
-                                <li><Link href="#" className="hover:underline">About Haier</Link></li>
-                                <li><Link href="#" className="hover:underline">Contact haier</Link></li>
+                                <li><Link href="#" className="hover:underline">About Zenith</Link></li>
+                                <li><Link href="#" className="hover:underline">Contact zenith</Link></li>
                                 <li><Link href="#" className="hover:underline">Investor Relations</Link></li>
                                 <li><Link href="#" className="hover:underline">Careers</Link></li>
                                 <li><Link href="#" className="hover:underline">Licensing & Reprints</Link></li>
@@ -101,7 +101,7 @@ export default function Footer() {
                         />
                         <p className="my-4 text-sm text-muted-foreground text-center">Zenith is one of Known Car Rental Company in dubai. We are Dealing with Luxury Cars, Sports Cars, SUV Cars and Economy Cars for Rent in Dubai. We are also provide chauffeur service.</p>
                         <FooterSocialIcons />
-                        {/* <div className="flex space-x-4">
+                        <div className="flex sm:hidden space-x-4">
                             <Button asChild={true} variant={"outline"} size={'icon'} className='rounded-full size-12'>
                                 <Link href="#" className=""><FaFacebook size={24} /></Link>
                             </Button>
@@ -117,27 +117,27 @@ export default function Footer() {
                             <Button asChild={true} variant={"outline"} size={'icon'} className='rounded-full size-12'>
                                 <Link href="#" className=""><FaPinterest size={24} /></Link>
                             </Button>
-                        </div> */}
+                        </div>
                     </div>
 
                     <section className='flex gap-8 justify-between sm:flex-row flex-col'>
                         <section className='flex gap-8 justify-between'>
                             <div>
                                 <h3 className="font-bold mb-4">Buying & Selling</h3>
-                                <ul className="space-y-2 text-muted-foreground">
-                                    <li><Link href="#" className="hover:underline">Find a Car</Link></li>
-                                    <li><Link href="#" className="hover:underline">Find a Dealer</Link></li>
-                                    <li><Link href="#" className="hover:underline">Listings by City</Link></li>
-                                    <li><Link href="#" className="hover:underline">Certified Pre-Owned</Link></li>
-                                    <li><Link href="#" className="hover:underline">Car Payment Calculators</Link></li>
-                                    <li><Link href="#" className="hover:underline">Car Reviews & Ratings</Link></li>
+                                <ul className="sm:space-y-2 space-y-1 text-muted-foreground">
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Find a Car</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Find a Dealer</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Listings by City</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Certified Pre-Owned</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Car Payment Calculators</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Car Reviews & Ratings</Link></li>
                                 </ul>
                             </div>
                             <div>
                                 <h3 className="font-bold mb-4">Explore Our Brand</h3>
-                                <ul className="space-y-2 text-muted-foreground">
-                                    <li><Link href="#" className="hover:underline">New Haier.com</Link></li>
-                                    <li><Link href="#" className="hover:underline">Dealer Rater</Link></li>
+                                <ul className="sm:space-y-2 space-y-1 text-muted-foreground">
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">New Zenith.com</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Dealer Rater</Link></li>
                                 </ul>
                             </div>
                         </section>
@@ -147,25 +147,25 @@ export default function Footer() {
                         <section className='flex gap-8 justify-between'>
                             <div>
                                 <h3 className="font-bold mb-4">For Dealers</h3>
-                                <ul className="space-y-2 text-muted-foreground">
-                                    <li><Link href="#" className="hover:underline">Dealer Login</Link></li>
-                                    <li><Link href="#" className="hover:underline">Grow With Haier</Link></li>
-                                    <li><Link href="#" className="hover:underline">Fuel</Link></li>
-                                    <li><Link href="#" className="hover:underline">Dealer Inspire</Link></li>
-                                    <li><Link href="#" className="hover:underline">Dealer rater</Link></li>
-                                    <li><Link href="#" className="hover:underline">Accu-Trade</Link></li>
+                                <ul className="sm:space-y-2 space-y-1 text-muted-foreground">
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Dealer Login</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Grow With Zenith</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Fuel</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Dealer Inspire</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Dealer rater</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Accu-Trade</Link></li>
                                 </ul>
                             </div>
                             <div>
                                 <h3 className="font-bold mb-4">Our Company</h3>
-                                <ul className="space-y-2 text-muted-foreground">
-                                    <li><Link href="#" className="hover:underline">About Haier</Link></li>
-                                    <li><Link href="#" className="hover:underline">Contact haier</Link></li>
-                                    <li><Link href="#" className="hover:underline">Investor Relations</Link></li>
-                                    <li><Link href="#" className="hover:underline">Careers</Link></li>
-                                    <li><Link href="#" className="hover:underline">Licensing & Reprints</Link></li>
-                                    <li><Link href="#" className="hover:underline">Site Map</Link></li>
-                                    <li><Link href="#" className="hover:underline">Feedback</Link></li>
+                                <ul className="sm:space-y-2 space-y-1 text-muted-foreground">
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">About Zenith</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Contact zenith</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Investor Relations</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Careers</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Licensing & Reprints</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Site Map</Link></li>
+                                    <li><Link href="#" className="hover:underline md:text-base text-sm">Feedback</Link></li>
                                 </ul>
                             </div>
                         </section>
@@ -173,12 +173,18 @@ export default function Footer() {
                 </div>
 
                 {/* bottom footer */}
-                <div className="mt-8 pt-8 flex flex-col md:flex-row justify-between items-center border-t border-border">
-                    <p className="mb-4 md:mb-0">&copy; copyright Zenith Super Car Rental, All Rights Reserved</p>
-                    <div className="flex space-x-4">
-                        <a href="#" className='hover:underline hover:text-primary'>Privacy Policy</a>
-                        <span className='mx-2'>•</span>
-                        <a href="#" className='hover:underline hover:text-primary'>Terms of Services</a>
+                <div className="sm:mt-8 sm:pt-8 mt-4 pt-4 flex flex-col md:flex-row justify-between items-center border-t border-border sm:text-sm text-xs">
+                    <div className='flex sm:gap-10 sm:flex-row flex-col'>
+                        <p className="mb-4 md:mb-0 text-center sm:text-left">&copy; Copyright Zenith Super Car Rental, All Rights Reserved</p>
+                        <div className="flex space-x-4 justify-center">
+                            <a href="#" className='hover:underline hover:text-primary'>Privacy Policy</a>
+                            <span className='mx-2'>•</span>
+                            <a href="#" className='hover:underline hover:text-primary'>Terms of Services</a>
+                        </div>
+                    </div>
+
+                    <div className='mt-4 sm:mt-0'>
+                        <p className='text-secondary'>Made by Tradvise</p>
                     </div>
                 </div>
             </div>
