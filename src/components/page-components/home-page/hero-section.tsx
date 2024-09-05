@@ -48,7 +48,7 @@ export default function HeroSection() {
                             <button className="border border-black rounded-full px-4 py-1 text-sm">+ Aventador</button>
                         </div>
 
-                        <section className="p-8 rounded-xl w-fit bg-white/20 backdrop-blur-sm shadow-md">
+                        <section className="p-5 rounded-xl w-fit bg-white/20 backdrop-blur-sm shadow-md">
                             <div className="mb-8">
                                 <div className="text-sm text-gray-600 mb-1">Rent Aventador</div>
                                 <div className="flex items-center">
