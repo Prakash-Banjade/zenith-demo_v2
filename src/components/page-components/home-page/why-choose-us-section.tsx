@@ -102,7 +102,7 @@ export default function WhyChooseUsSection() {
                             </ul>
                         </section>
 
-                        <Button title="Click to call us now" variant={'outline'} className="px-10 py-6 rounded-full text-base items-center mt-auto xl:w-full w-fit mt-10">
+                        <Button title="Click to call us now" variant={'outline'} className="px-10 py-6 rounded-full text-base items-center xl:w-full w-fit mt-10">
                             <PhoneIcon size={20} className="mr-2" />
                             Call us now
                         </Button>
