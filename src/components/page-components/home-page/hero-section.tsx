@@ -73,7 +73,7 @@ export default function HeroSection() {
                     </div>
 
                     <div>
-                        <h1 className="2xl:text-8xl lg:text-6xl sm:text-5xl text-4xl font-extrabold mb-4 text-right text-gray-800 tracking-tighter">Drive the dream in one click</h1>
+                        <h1 className="2xl:text-8xl lg:text-6xl sm:text-5xl text-4xl font-extrabold mb-4 text-right text-gray-900 tracking-tighter">Drive the dream in one click</h1>
                         <p className="text-xl mb-6 text-right"><span className="font-semibold text-secondary">Zenith</span> Super Car Rental</p>
                         <p className="mb-2 text-right font-medium text-xl tracking-tighter">The most trusted rental car company in Dubai</p>
                         <p className="mb-6 text-right">
