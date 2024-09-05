@@ -18,7 +18,7 @@ export default function HomePage() {
     <>
       <div className="md:h-12 h-5"></div>
       <HeroSection />
-      <div className="h-20"></div>
+      <div className="md:h-20 h-8"></div>
       <ModelSelectForm />
       <div className="md:h-36 h-20"></div>
       <BrandsSection />
