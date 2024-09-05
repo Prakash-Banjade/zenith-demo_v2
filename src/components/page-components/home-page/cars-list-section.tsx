@@ -127,7 +127,7 @@ const Item = ({
             </section>
 
             <div className="flex gap-2 justify-between items-center">
-                <p className='text-lg font-semibold'>
+                <p className='text-lg font-semibold text-secondary'>
                     AED {price.toLocaleString()}/day
                 </p>
 

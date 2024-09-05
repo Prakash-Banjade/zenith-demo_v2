@@ -3,8 +3,8 @@
 import Image from "next/image"
 import { ArrowRight, PlayIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import SportCar from "@/../public/assets/icons/Sports-black.svg";
-import LuxuryCar from "@/../public/assets/icons/Luxury-white.svg";
+import SportCar from "@/../public/assets/icons/Sports-white.svg";
+import LuxuryCar from "@/../public/assets/icons/Luxury-black.svg";
 import SUV from "@/../public/assets/icons/suv-black.svg";
 import Convertible from "@/../public/assets/icons/convertible-black.svg";
 import Business from "@/../public/assets/icons/business-black.svg";
@@ -21,11 +21,11 @@ export default function HeroSection() {
                 <div className="lg:grid md:grid-cols-2 gap-8 items-center">
                     <div className="lg:block hidden">
                         <div className="flex space-x-6 mb-8">
-                            <button className="p-3 bg-gray-900 rounded-full">
-                                <Image src={LuxuryCar} alt="Luxury" width={50} height={50} />
+                            <button className="p-3 bg-[#111] rounded-full border border-border">
+                                <Image src={SportCar} alt="Sport" width={50} height={50} />
                             </button>
                             <button className="p-3 bg-white rounded-full border border-border">
-                                <Image src={SportCar} alt="Sport" width={50} height={50} />
+                                <Image src={LuxuryCar} alt="Luxury" width={50} height={50} />
                             </button>
                             <button className="p-3 bg-white rounded-full border border-border">
                                 <Image src={SUV} alt="SUV" width={50} height={50} />
@@ -51,7 +51,10 @@ export default function HeroSection() {
                         <section className="p-8 rounded-xl w-fit bg-white/20 backdrop-blur-sm shadow-md">
                             <div className="mb-8">
                                 <div className="text-sm text-gray-600 mb-1">Rent Aventador</div>
-                                <div className="text-5xl font-bold mb-4"><span className="text-gray-900 text-3xl font-semibold">AED</span> 6,999</div>
+                                <div className="flex items-center">
+                                    <p className="text-5xl font-bold mb-4"><span className="text-gray-900 text-3xl font-semibold">AED</span> 6,999</p>
+                                    <p>/day</p>
+                                </div>
                             </div>
 
                             <div className="flex gap-2 justify-between">
