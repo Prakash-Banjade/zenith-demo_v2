@@ -64,9 +64,9 @@ export const Navigation = ({ toggleOpen }: { toggleOpen: Cycle }) => {
             <motion.section
                 variants={variants2}
                 transition={{ delay: 0.5 }}
-                className='pb-3 border-b border-muted-foreground'
+                className='pb-3 border-b border-gray-400'
             >
-                <p className='text-sm font-briem text-muted-foreground uppercase italic'>Navigation</p>
+                <p className='text-sm font-briem text-gray-400 uppercase italic'>Navigation</p>
             </motion.section>
             <motion.ul variants={variants} className="text-secondary flex flex-col !w-full mt-[10%]">
                 {routes.map((route) => (

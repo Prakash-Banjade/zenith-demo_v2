@@ -41,7 +41,7 @@ export default function Footer() {
                             alt="Logo"
                             className="max-h-12 w-auto"
                         />
-                        <p className="my-4 text-sm text-muted-foreground text-center">Zenith is one of Known Car Rental Company in dubai. We are Dealing with Luxury Cars, Sports Cars, SUV Cars and Economy Cars for Rent in Dubai. We are also provide chauffeur service.</p>
+                        <p className="my-4 text-sm sm:text-base text-muted-foreground text-center">Zenith is one of Known Car Rental Company in dubai. We are Dealing with Luxury Cars, Sports Cars, SUV Cars and Economy Cars for Rent in Dubai. We are also provide chauffeur service.</p>
                         <FooterSocialIcons />
                         {/* <div className="flex space-x-4">
                             <Button asChild={true} variant={"outline"} size={'icon'} className='rounded-full size-12'>

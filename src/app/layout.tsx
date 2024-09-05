@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Karla } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DesktopNav from "@/components/layouts/desktop-nav";
 import Footer from "@/components/page-components/home-page/footer";
 
-const ubuntu = Ubuntu({ weight: ["400", "500", "700"], subsets: ["latin"] });
+const karla = Karla({ weight: ["400", "500", "700", "800"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>
+      <body className={karla.className}>
         <DesktopNav />
         {children}
         <Footer />

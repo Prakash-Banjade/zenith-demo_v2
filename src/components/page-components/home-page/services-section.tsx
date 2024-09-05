@@ -17,7 +17,7 @@ export default function Component() {
                 <div>
                     <h2 className="section-title text-white mb-2">Our Services</h2>
                     <p className="text-secondary mb-6">Looking to Save More on Your rental car?</p>
-                    <p className="mb-8 text-gray-300 text-sm">
+                    <p className="mb-8 text-gray-300 text-sm sm:text-base">
                         Discover unparalleled luxury and convenience with EuroElite Cars&apos; premium car rental services.
                         From sleek sedans to spacious SUVs, our meticulously curated fleet ensures you&apos;ll travel in style
                         and comfort. With flexible rental options, seamless booking, and exceptional customer service,
@@ -77,7 +77,7 @@ function ServiceItem({ title, description }: {
             </div>
             <div>
                 <h3 className="text-lg font-semibold mb-1">{title}</h3>
-                <p className="text-sm text-gray-400">{description}</p>
+                <p className="text-sm sm:text-base text-gray-400">{description}</p>
             </div>
         </div>
     )

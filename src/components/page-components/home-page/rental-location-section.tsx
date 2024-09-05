@@ -43,7 +43,7 @@ export const RentalLocationsSection = () => {
                     <h3 className="section-title">
                         <span className="text-primary">Rental</span> Locations
                     </h3>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground">
                         We offer a wide range of rental locations across Dubai. From luxury
                         villas to budget-friendly homes, our selection caters to every
                         preference.

@@ -89,7 +89,7 @@
   }
 
   .section-title {
-    @apply 2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-extrabold mb-4 text-gray-900;
+    @apply 2xl:text-5xl lg:text-4xl sm:text-3xl text-2xl font-extrabold mb-4 text-gray-900 tracking-tight;
   }
 
   .zen__transition__300 {
